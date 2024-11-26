@@ -43,10 +43,54 @@ function doubleThem(a, b) {
 // console.log(first)
 // console.log(second)
 
+const myObject = {
+  student: "Susan",
+  teacher: "Mike",
+};
+
+// const {student, teacher} = myObject;
+// console.log(student, teacher)
+
+// ALIAS
+// const {student: pupils, teacher: proffessor} = myObject;
+// console.log(pupils, proffessor)
+
+/* const user = {
+    name: 'Rowan Atkinson',
+    popularity: 'Mr Bean',
+    city: 'New York'
+}
+
+const {popularity: title, name, city} = user;
+console.log(title, name, city)
+ */
+
+// Array Destructuring Example
+
+const [feeling, fruit, motion] = ["love", "avocado"];
+/* console.log(feeling); */ //Will not get motion
+
+// Skipping items in an array
+
+// const [num1, , , num4] = [1, 2, 3, 4];
+// console.log(num4)
 
 
+/* let a = 10, b = 100;
+[b, a] = [a, b];
+console.log(a)
+console.log(b) */
 
 
+let num1, num2, num3;
+// [num1, num2 = 9, num3] = [1, , 3];
+// console.log(num2)
 
 
+// Destruction with function
 
+const digits = () => [1, 2, 3, 4];
+
+const [digit1, digit2] = digits();
+console.log(digit1)
+console.log(digit2)
