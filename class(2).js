@@ -1,25 +1,49 @@
-const students = [
-    { id: 1, name: 'Alice', score: 45 },
-    { id: 2, name: 'Bob', score: 55 },
-    { id: 3, name: 'Charlie', score: 60 },
-    { id: 4, name: 'Daisy', score: 85 }
+const products = [
+  { id: 1, name: "Lenovo", price: 65000 },
+  { id: 2, name: "dell", price: 45000 },
+  { id: 3, name: "hp", price: 40000 },
+  { id: 4, name: "Mac", price: 150000 },
 ];
 
-const bonus = students.map(student => ({
-    ...student,score: student.score + 5
-}));
-console.log(bonus)
+// has some properties, method
+class Products{
+    country = 'Bangladesh';
+    constructor(name) {
+        this.name = name
+    }
+    speak(talk){
+        console.log(`Taking about ${talk}`)
+    }
+}
 
-/* const above50 = bonus.filter(student => student.score > 50);
-console.log(above50);
+const lenovo = new Products('Lenovo Kinsi');
+// console.log(lenovo)
+// lenovo.speak('How Are you')
 
-const firstAbove90 = bonus.find(student => student.score >= 90);
-console.log(firstAbove90) */
+class Teacher{
+    constructor(name, subject){
+        this.name = name;
+        this.subject = subject;
+    }
+    lecture(){
+        console.log('Sir is teaching Math')
+    }
+}
 
-/* 
-Use forEach to log each student's name.
-Use map to create an array of students' scores increased by 5 as a bonus.
-Use filter to find students who scored above 50 after the bonus.
-Use find to get the first student who scored above 90 after the bonus.
-Use reduce to calculate the total of all scores after the bonus.
-*/
+const t1 = new Teacher('Shahjahan Topon', 'Physics');
+
+const t2 = new Teacher('Rashid', 'English');
+// console.log(t1, t2)
+
+
+class Student{
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    introduce(){
+        return `Hi this is ${this.name} and I am ${this.age} years old`
+    }
+}
+const student1 = new Student('Hridoy', 24);
+console.log(student1.introduce())
