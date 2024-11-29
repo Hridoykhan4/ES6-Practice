@@ -34,10 +34,49 @@ else{
     console.log('x is falsy')
 } */
 
-let x;
+
+// Empty array, object is also truthy
+/* let x = [];
 
 if (x) {
   console.log("x is truthy");
 } else {
   console.log("x is falsy");
 }
+ */
+
+
+
+// Check falsy
+let y = '';
+
+// if(!y){
+//     console.log('Okay, thik hai')
+// }
+// else{
+//     console.log('Nahi hai Thik')
+// }
+
+// Check truthy .... !z makes the value of z which is truthy into false, Using double bang makes it truthy again
+/* let z = 50;
+if(!!z){
+    console.log('Value is truthy')
+}
+else{
+    console.log('')
+} */
+
+/* const x = null; //Null is a falsy
+if(!x){ // !x stands for not truthy,i.e. falsy ...There it goes inside the condition
+    console.log('Value is falsy')
+} */
+
+
+/* const ac = false;
+if(!ac){
+    console.log('Hello')
+}
+else{
+    console.log('Khela shundor')
+}
+ */
