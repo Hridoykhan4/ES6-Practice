@@ -27,9 +27,9 @@ const getPi = () => Math.PI;
 // Large arrow function
 const doMath = (x, y, z) => {
     const sum = x + y + z;
-    const mult = x * y * z;
-    const result = sum + mult;
-    return result
+    const mul = x * y *z;
+    return sum + mul
 }
 
-console.log(doMath(2,1,3))
+// console.log(doMath(2,1,3))
+

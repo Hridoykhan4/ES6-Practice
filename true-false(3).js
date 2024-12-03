@@ -48,7 +48,7 @@ if (x) {
 
 
 // Check falsy
-let y = '';
+// let y = '';
 
 // if(!y){
 //     console.log('Okay, thik hai')
@@ -80,3 +80,13 @@ else{
     console.log('Khela shundor')
 }
  */
+
+function showMessage(callback, name){
+    callback(name);
+}
+
+function message(known){
+    console.log('Good Morning', known);
+}
+
+showMessage(message, 'KalaMia')

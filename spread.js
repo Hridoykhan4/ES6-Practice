@@ -35,12 +35,30 @@ console.log(add(numbers)) */
 const arr1 = [3, 4];
 console.log([...arr, ...arr1]) */
 
-const person = {
+
+const arr = [1, 2];
+const arr1 = [3, 4];
+const arr2 = [...arr, 100, 200, 300, ...arr1];
+console.log(arr2)
+
+
+
+
+
+
+/* const person = {
     name: 'Hridoy', 
     age: 25
 };
 
 const newPerson = {...person};
+newPerson.name = 'Boss'
+person.name = 'Hero'
+console.log(newPerson)
+console.log(person)
+ */
+
+/* const newPerson = {...person};
 newPerson.name = 'Jamal'
 console.log(person)
-console.log(newPerson)
+console.log(newPerson) */
