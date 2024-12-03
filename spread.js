@@ -12,13 +12,12 @@ const friends = [3, 4, 6, 7, 11];
 const bondhu = [friends];
 const dosto = [...friends];
 friends.push(100, 200, 300);
-bondhu.push(200, 300, 400)
+bondhu.push(200, 300, 400);
 // console.log(dosto);
 // console.log(friends);
 
 const digits = [...friends, 9999, 100, 20];
 // console.log(digits);
-
 
 /* const letter = ['a', 'b', 'c'];
 const letter1 = [2, 3, 4, ...letter, 5, 6];
@@ -35,17 +34,6 @@ console.log(add(numbers)) */
 const arr1 = [3, 4];
 console.log([...arr, ...arr1]) */
 
-
-const arr = [1, 2];
-const arr1 = [3, 4];
-const arr2 = [...arr, 100, 200, 300, ...arr1];
-console.log(arr2)
-
-
-
-
-
-
 /* const person = {
     name: 'Hridoy', 
     age: 25
@@ -53,6 +41,8 @@ console.log(arr2)
 
 const newPerson = {...person};
 newPerson.name = 'Boss'
+
+
 person.name = 'Hero'
 console.log(newPerson)
 console.log(person)
@@ -62,3 +52,29 @@ console.log(person)
 newPerson.name = 'Jamal'
 console.log(person)
 console.log(newPerson) */
+
+
+/* const obj1 = {
+    a: 2,
+    b: 4
+};
+
+const obj2 ={
+    c:6,
+    d: 10
+}
+
+const obj4 = {
+    age: 23,
+    class: 12
+}
+
+const obj3 = {...obj1, ...obj2, e: 10, name: 'Jamal', ...obj4, 'fav-color': 'blue'};
+console.log({obj3, ...obj4}) */
+
+
+function list(a,...rest){
+    return rest
+}
+console.log(list(2,3,4,5)
+)

@@ -5,7 +5,7 @@ const actor = {
   money: 12112121,
 };
 
-const { phone, age: boyos } = actor;
+// const { phone, age: boyos } = actor;
 
 // const phone = actor.phone;
 
@@ -16,8 +16,14 @@ const { phone, age: boyos } = actor;
 // console.log(phone)
 // console.log(phone)
 
+// const numbers = [45, 99, 22, 121, 2323];
+// const [first, second, ...rest] = numbers;
+
+
+
+
 // Array Destruction
-const numbers = [45, 99, 22, 121, 2323];
+// const numbers = [45, 99, 22, 121, 2323];
 // const [first, second] = numbers;
 // console.log(first)
 // console.log(second)
@@ -35,21 +41,29 @@ console.log(y)
 // console.log(first)
 // console.log(second)
 
-function doubleThem(a, b) {
-  return [a * 2, b * 2];
-}
+
 
 // const [first, second]= doubleThem(3, 5)
 // console.log(first)
 // console.log(second)
 
-const myObject = {
-  student: "Susan",
-  teacher: "Mike",
-};
+
+
+/* function calculate(length, width){
+  const area = length * width;
+  const perimeter = 2* (length + width);
+  return [area, perimeter];
+}
+const [area, perimeter] = calculate(20, 18);
+console.log(area)
+console.log(perimeter) */
+
+
+
+
 
 // const {student, teacher} = myObject;
-// console.log(student, teacher)
+// console.log(student, teacher)  `
 
 // ALIAS
 // const {student: pupils, teacher: proffessor} = myObject;
@@ -68,12 +82,12 @@ console.log(title, name, city)
 // Array Destructuring Example
 
 const [feeling, fruit, motion] = ["love", "avocado"];
-/* console.log(feeling); */ //Will not get motion
+/* console.log(feeling); */
 
 // Skipping items in an array
 
-// const [num1, , , num4] = [1, 2, 3, 4];
-// console.log(num4)
+const [num1, , , num4] = [1, 2, 3, 4];
+console.log(num4)
 
 
 /* let a = 10, b = 100;
@@ -82,7 +96,7 @@ console.log(a)
 console.log(b) */
 
 
-let num1, num2, num3;
+// let num1, num2, num3;
 // [num1, num2 = 9, num3] = [1, , 3];
 // console.log(num2)
 
@@ -92,5 +106,5 @@ let num1, num2, num3;
 const digits = () => [1, 2, 3, 4];
 
 const [digit1, digit2] = digits();
-console.log(digit1)
-console.log(digit2)
+// console.log(digit1)
+// console.log(digit2)
