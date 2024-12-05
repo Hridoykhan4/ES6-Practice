@@ -77,6 +77,12 @@ let data2 = {
 
 // console.log(data2.data[0].bookDetails.name)
 
+const numbers = [10, 20, 30, 40, 50];
+
+const average = numbers.reduce((sum, num, _, arr) => (sum + num), 0) / numbers.length;
+
+console.log(average); 
+
 // Even Number
 /* const arr = [1, 3, 5, 7, 9];
 
@@ -98,6 +104,28 @@ console.log(arr) */
 };
 console.log(newArray) */
 
+/* const instructor = [
+  {name: 'Kamal', age: 22, position: 'Senior'},
+  {name: 'Akil', age: 27, position: 'Junior'},
+  {name: 'Shobuj', age: 32, position: 'Senior'}
+]
+const senior = instructor.filter(instructor => instructor.position === 'Senior');
+console.log(senior) */
+
+// const people = [
+//   { name: "Meena", age: 20 },
+//   { name: "Rina", age: 15 },
+//   { name: "Sucharita", age: 22 },
+// ];
+
+// const sum = people.reduce((acc, num) => acc + num.age,0);
+// console.log(sum)
+
+
+
+// Empty An array
+
+
 // Task 2
 // const numbers = [33, 50, 79, 78, 90, 101, 30];
 // const divisible = numbers.filter(n => n % 10 === 0);
@@ -115,16 +143,18 @@ console.log(newArray) */
 const seniorRank = instructor.filter(n => n.position.toLowerCase() === 'Senior'.toLowerCase());
 console.log(seniorRank) */
 
-const people = [
+/* const people = [
   { name: "Meena", age: 20 },
   { name: "Rina", age: 15 },
   { name: "Sucharita", age: 22 },
 ];
-
+ */
 /* let sum = 0;
 for (const element of people) {
     sum += element.age;
 } */
-console.log(sum);
-const ageTotal = people.reduce((acc, num) => acc + num.age, 0);
-console.log(ageTotal);
+// console.log(sum);
+// const ageTotal = people.reduce((acc, num) => acc + num.age, 0);
+// console.log(ageTotal);
+
+

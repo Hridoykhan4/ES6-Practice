@@ -1,3 +1,5 @@
+
+
 /* const newArray = [];
 const newFriends = friends =>  {
     for (const friend of friends) {
@@ -18,21 +20,26 @@ Calculate the sum of the squared elements.
 Return the average of these squared elements.
 */
 /* const avgSum = arr => {
-    const elementSquare = [];
+   let sum = 0
     for (const element of arr) {
-        elementSquare.push(element * element);
+        const square = element * element
+        sum += square
     }
-    let sum = 0;
-    for (const element of elementSquare) {
-        sum += element;
-    }
-    return sum / elementSquare.length
-} */
-
-// console.log(avgSum([2, 3, 4, 5]))
+    return sum / arr.length
+}
 
 
-const getMax = (firstArray, secondArray) => {
+console.log(avgSum([2, 3, 4, 5])) */
+
+/* const avgSum = arr => {
+    const squared = arr.map(element => element * element).reduce((a,b) => a + b,0)
+    return squared / arr.length
+}
+
+console.log(avgSum([2, 3, 4, 5])) 
+
+ */
+/* const getMax = (firstArray, secondArray) => {
     const newArray = [...firstArray, ...secondArray];
     let max =  newArray[0];
     for (const element of newArray) {
@@ -42,8 +49,19 @@ const getMax = (firstArray, secondArray) => {
     }
     return max
 }
-
+ */
+const getMax = (arr1, arr2) => {
+  const newArr = [...arr1, ...arr2];
+    let max = newArr [0];
+    for (const element of newArr) {
+        if(element > max){
+            max = element;
+        }
+    }
+    return max
+}
 const arr1 = [2,3,4,15];
 const arr2 = [5,6,7,8];
 
 console.log(getMax(arr1, arr2));
+

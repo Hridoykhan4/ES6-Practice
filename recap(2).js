@@ -7,9 +7,9 @@ const person = {
 // console.log(`${person.name} has a ${a + numbers[0]}`)
 
 const {name, ...rest} = { x: 2, y: 5, z: 4, name: "Obhijeet", age: 22 };
-// console.log(rest)
+console.log(rest)
 
 
 const [first, ...others] = ['ram', 'sam', 'jodu', 'madhu'];
-console.log(others)
+// console.log(others)
 

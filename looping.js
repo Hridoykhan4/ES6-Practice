@@ -4,9 +4,9 @@ for (const number of numbers) {
 }
 
 const nobab = "Siraz Ud Doula";
-for (const part of nobab) {
-  // console.log(part)
-}
+/* for (const part of nobab) {
+  console.log(part.toUpperCase())
+} */
 
 const glass = {
   name: "glass",
@@ -14,6 +14,12 @@ const glass = {
   price: 10,
   isCleaned: true,
 };
+
+/* const keys = Object.keys(glass);
+for (const key of keys) {
+    console.log(key, glass[key])
+}
+ */
 
 /* for (const key in glass) {
     console.log(key, ':', glass[key])
@@ -36,6 +42,8 @@ for (const element of keys) {
 console.log(x)
 console.log(y)
 console.log(z) */
+
+
 
 // let [num1, num2, ...num3] = [1,2,3,4,5,6];
 // console.log(num1)

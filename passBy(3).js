@@ -22,8 +22,17 @@ console.log(output) */
 // console.log(student1, student2);
 
 
+/* function changeName(person){
+    person.name = 'Kim Xong';
+    console.log('Inside: ',person.name)
+}
 
-function changeNumber(person){
+const person = {name: 'Karim'};
+changeName(person);
+console.log('Outside: ',person)
+ */
+
+/* function changeNumber(person){
     person.name = 'Jamal';
     console.log(person)
 }
@@ -33,4 +42,14 @@ const person = {
 }
 
 changeNumber(person);
-console.log(person)
+console.log(person) */
+
+const updateUserProfile = function(a){
+    a.name = 'Marina Bay',
+    a.email = 'KalaShap@gmail.com'
+}
+ 
+
+let userProfile = { name: 'Karim', email: 'karim@example.com' };
+updateUserProfile(userProfile); // Passing an object
+console.log('Outside Function:', userProfile);

@@ -9,6 +9,7 @@
 7...deleting an element outside an array
 8...set e value directly to undefined
  */
+
 let first;
 
 function second(a, b) {
@@ -23,42 +24,34 @@ function third(a, b, c, d) {
 }
 // third(2, 4);
 
-
-
-
-function noNegative(a, b){
-  if(a < 0 || b < 0){
-    return 
+function noNegative(a, b) {
+  if (a < 0 || b < 0) {
+    return;
   }
-  return a+b;
+  return a + b;
 }
 // console.log(noNegative(2, -5))
 
-
 const fifth = {
-  id: 2, 
-  name: 'ponchom',
-  age: 30
-}
+  id: 2,
+  name: "ponchom",
+  age: 30,
+};
 
 // console.log(fifth.age, fifth.salary)
 
-
-// The index that is out of the index will return undefined 
-const sixth = [4, 66, 11, 75,11];
+// The index that is out of the index will return undefined
+const sixth = [4, 66, 11, 75, 11];
 // delete sixth[1]
 // console.log(sixth[8])
 // console.log(sixth)
-
 
 // const eighth = undefined
 
 // Jodi bujhaite hy ei jinishTa nai,onk shmy server theke data paite gele explicitly bola thake data ta nai..
 const ninth = null;
 
-console.log(typeof null)
-
-
+// console.log(typeof null)
 
 // const numbers = [10, 20, 30, 40, 50, 60];
 // numbers.splice(3, 0, 100, 200);

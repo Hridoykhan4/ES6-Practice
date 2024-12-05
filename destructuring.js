@@ -19,9 +19,6 @@ const actor = {
 // const numbers = [45, 99, 22, 121, 2323];
 // const [first, second, ...rest] = numbers;
 
-
-
-
 // Array Destruction
 // const numbers = [45, 99, 22, 121, 2323];
 // const [first, second] = numbers;
@@ -41,13 +38,9 @@ console.log(y)
 // console.log(first)
 // console.log(second)
 
-
-
 // const [first, second]= doubleThem(3, 5)
 // console.log(first)
 // console.log(second)
-
-
 
 /* function calculate(length, width){
   const area = length * width;
@@ -57,10 +50,6 @@ console.log(y)
 const [area, perimeter] = calculate(20, 18);
 console.log(area)
 console.log(perimeter) */
-
-
-
-
 
 // const {student, teacher} = myObject;
 // console.log(student, teacher)  `
@@ -86,25 +75,31 @@ const [feeling, fruit, motion] = ["love", "avocado"];
 
 // Skipping items in an array
 
-const [num1, , , num4] = [1, 2, 3, 4];
-console.log(num4)
-
+// const [num1, , , num4] = [1, 2, 3, 4];
+// console.log(num4)
 
 /* let a = 10, b = 100;
 [b, a] = [a, b];
 console.log(a)
 console.log(b) */
 
-
 // let num1, num2, num3;
 // [num1, num2 = 9, num3] = [1, , 3];
 // console.log(num2)
 
-
 // Destruction with function
 
 const digits = () => [1, 2, 3, 4];
+let firstDigit, others;
+/* 
+[firstDigit, ...others] = digits();
+console.log(others)
+ */
 
-const [digit1, digit2] = digits();
+/* const [a, , c] = [10, 20, 40];
+console.log(c)
+ */
+
+// const [digit1, digit2] = digits();
 // console.log(digit1)
 // console.log(digit2)

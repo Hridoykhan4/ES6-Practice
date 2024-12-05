@@ -1,5 +1,11 @@
 // Jehutu x false tai x is falsy te jabe,,,
 
+
+const y = null
+if(!y){
+    console.log('Value is falsy')
+}
+
 /* 
 Truthy..
 1 . true hoile truthy
@@ -81,7 +87,7 @@ else{
 }
  */
 
-function showMessage(callback, name){
+/* function showMessage(callback, name){
     callback(name);
 }
 
@@ -89,4 +95,4 @@ function message(known){
     console.log('Good Morning', known);
 }
 
-showMessage(message, 'KalaMia')
+showMessage(message, 'KalaMia') */
