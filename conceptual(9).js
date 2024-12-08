@@ -1,7 +1,5 @@
-const x = 10;
-{
-  const x = 5;
-  console.log(x)
-}
+const array = [10,20,30,40,50];
+const result = array.map((a) => a + 2)
+console.log(array)
+console.log(result)
 
-console.log(x)
